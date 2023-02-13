@@ -1,17 +1,17 @@
 name: Workflow-1
 on:
-	workflow_dispatch:
-		inputs:
-			Name: 
-				description: input the name
-				required: true
-				default: fjorge
+  workflow_dispatch:
+    inputs:
+      Name: 
+        description: input the name
+        required: true
+        default: fjorge
   schedule:
     - cron: '*/15 6 6'
-      
+
 jobs:
   echo-step:
-    run-on: ubuntu-latest
+  run-on: ubuntu-latest
     steps:
       - run: |
           echo "hello ${{inputs.name}}"

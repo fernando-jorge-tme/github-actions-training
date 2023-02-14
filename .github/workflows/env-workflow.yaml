@@ -1,3 +1,7 @@
+name: Env Workflows
+
+on: [workflow_dispatch]
+
 workflow_dispatch:
     inputs:
       environment:

@@ -1,11 +1,12 @@
 name: Env Workflows
 
-workflow_dispatch:
-    inputs:
-      environment:
-        description: 'Environment to deploy to'
-        type: environment
-        required: true
+on:
+    workflow_dispatch:
+        inputs:
+          environment:
+            description: 'Environment to deploy to'
+            type: environment
+            required: true
         
 jobs:
     Test:
